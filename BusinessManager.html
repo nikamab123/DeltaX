@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Business Manager</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.syncfusion.com/ej2/dist/ej2.min.js" type="text/javascript"></script>
+</head>
+<body>
+<header>
+    <nav class="navbar">
+        <ul>
+            <!-- <li><img src="img.jpg" height="10%" width="10%" align:center></li> -->
+            <li><a href="home.html">Home</a></li>
+            <!-- <li><a href="#">Tele-Calling Team</a></li> -->
+            <!-- <li><a href="#">Sales Assistent</a></li> -->
+            <li><a href="#">Business Manager</a></li>
+            <!-- <li><a href="#">After Sales Specialist</a></li>  -->
+        </ul>
+        
+    </nav>
+    <section
+    ></section></header>
+    <div id="container"></div>
+    <script>
+ 
+        var pie = new ej.charts.AccumulationChart({
+            //Initializing Series
+            series: [
+                {
+                    dataSource: [
+                        { 'x': 'Not Interested', y: 60 },
+                        { 'x': 'Interested', y: 40 },
+                    ],
+                    dataLabel: {
+                        visible: true,
+                        position: 'Inside',
+                    },
+                    xName: 'x',
+                    yName: 'y'
+                }
+            ],
+        });
+        pie.appendTo('#container');
+    </script>
+    
+</body>
+</html>
